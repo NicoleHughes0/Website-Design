@@ -1,0 +1,149 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    padding: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+button {
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    display: flex;
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+    padding-top: 20px;
+    align-items: center;
+}
+.logo-container, .nav-links, .cart {
+    display: flex;
+}
+.logo-container {
+    flex: 1;
+}
+.logo {
+    font-weight: 400;
+    margin: 5px;
+}
+nav {
+    flex: 3;
+}
+.nav-links {
+    justify-content: space-around;
+    list-style: none;
+}
+.email {
+    color: #5f5f79;
+    text-decoration: none;
+}
+.nav-link {
+    color: #5f5f79;
+    font-size: 18px;
+    text-decoration: none;
+}
+.cart {
+    flex: 1;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.presentation {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+.introduction {
+    flex: 1;    
+}
+.intro-text h1{
+    font-size: 44px;
+    font-weight: 500;
+    background: linear-gradient(to right, #494964, #6f6f89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.intro-text p{
+    margin-top: 5px;
+    font-size: 15px;
+    color: #585772;
+}
+.cta {
+    padding: 50px 0px 0px 0px;
+
+}
+.cta-select {
+    border: 2px solid#6f6f89;
+    background: transparent;
+    color:#6f6f89;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.cta-add {
+    background: #6f6f89;
+    width: 150px;
+    height: 50px;
+    cursor: not-allowed;
+    font-size: 16px;
+    border: none;
+    color: white;
+    margin: 30px 0px 0px 30px;
+}
+.cover {
+    flex: 1;
+    display: flex;
+    justify-content: center; height: 60vh;
+}
+.cover img{
+    height: 100%;
+    animation: drop 1.5s ease;
+}
+.shirt {
+    flex: 1;
+    display: flex;
+    justify-content: center; height: 60vh;
+}
+.shirt img{
+    height: 100%;
+    filter: drop-shadow(0px 5px 3px black);
+    animation: drop 1.5s ease;
+}
+
+
+/* picture animation */
+@keyframes drop{
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100% {
+
+    }
+}
+
+/* mobile friendly */
+@media screen and (max-width: 1024px){
+    .presentation {
+        flex-direction: column;
+    }
+    .introduction {
+        margin-top: 5vh;
+        text-align: center;
+    }
+    .intro_text h1 {
+        font-size: 30px;
+    }
+    .intro-text p {
+        font-size: 18px;
+    }
+    .cta {
+        padding: 10px 0px 0px 0px;
+    }
+    .cover img{
+        height: 80%;
+    }
+}
